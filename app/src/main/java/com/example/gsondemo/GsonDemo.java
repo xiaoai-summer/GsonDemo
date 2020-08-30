@@ -14,7 +14,17 @@ public class GsonDemo {
     private String hobby = "";
     private Map map = new HashMap();
 
+    public GsonDemo() {
+
+    }
+
     public GsonDemo(String name, String hobby, Map map) {
+        this.name = name;
+        this.hobby = hobby;
+        this.map = map;
+    }
+
+    public void handleData(String name, String hobby, Map map) {
         this.name = name;
         this.hobby = hobby;
         this.map = map;

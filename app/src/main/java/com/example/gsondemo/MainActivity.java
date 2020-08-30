@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
         Map map = new HashMap();
         map.put("name", "xiaotian");
-        GsonDemo gsonDemo = new GsonDemo("xiaoai", "sport", map);
+        GsonDemo gsonDemo = new GsonDemo();
+        gsonDemo.handleData("xiaoai", "sport", map);
         Gson gson = new Gson();
         String json = gson.toJson(gsonDemo);
         Log.i(TAG, "json= " + json);
